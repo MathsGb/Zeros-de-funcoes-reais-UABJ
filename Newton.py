@@ -11,7 +11,7 @@ def phi(x):
 # aproximação inicial
 
 #condição inicia ou somente X0 está dentro do intervalo dado
-A= 0.5
+A = 0.5
 
 Erro = 0.00009
 k = 0

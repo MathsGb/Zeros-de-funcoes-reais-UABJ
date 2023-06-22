@@ -5,11 +5,13 @@ def funcao(x):
     resultado = math.e**x - 4*x**2
     return resultado
 
+#condições iniciais
+A = 0
+B = 1
 Erro = 0.0009
-contador = 1
-A = int(input("digite a extremidade a esquerda: "))
-B = int(input("digite a extremidade a direita: "))
-Meio = (A+B)/2 
+k = 1
+
+Meio = (A+B)/2
 resultado = funcao(Meio)
 
 while (math.fabs(resultado) > Erro):
@@ -19,7 +21,7 @@ while (math.fabs(resultado) > Erro):
         B = Meio
     Meio = (A+B)/2 
     resultado = funcao(Meio)
-    contador += 1
+    k += 1
 
-print(Meio)
-print(contador)
+print(f"O resultado da raiz é {Meio}")
+print(f"e o número de interações é {k}")
